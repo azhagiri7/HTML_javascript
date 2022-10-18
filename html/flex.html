@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+            header{
+                background-color: darkgrey;
+                padding: 25px;
+                font-style: italic;
+               
+                text-align: center;
+            }
+            section{
+                
+                border-style: double;
+                display:-webkit-flex;
+                display:flex;
+                height: 500px;
+            }
+            
+            
+            nav{
+                -webkit-flex:1;
+                flex:1;
+                margin:  30px;
+                background-color: aquamarine;
+                border-style: dotted;
+            }
+            article{
+                -webkit-flex:5;
+                flex:5;
+                border-style: dotted;
+                text-align: center;
+                
+                
+            }
+            
+            
+            footer{
+                background-color: rebeccapurple;
+                color: aqua;
+                padding: 30px;
+                text-align: center;
+                height: 100px;
+            }
+        @media(max-width:100){
+            nav,article{
+                flex-direction: row;
+                flex-direction: column;
+            }
+        }
+
+        
+
+
+        </style>
+      
+    </head>
+    <body >
+        <header> 
+            <h1> THE TITTLE</h1>
+        </header>
+        <section>
+         <nav >
+            <ul>
+                <li>I</li>
+                <li>II</li>
+                <li>III</li>
+            </ul>
+         </nav>
+         <article>
+            <h1>the heading</h1>
+            <p>the pargraph</p>
+         </article>
+        </section>
+        <footer>
+            the footer
+        </footer>
+    </body>
+</html>
